@@ -10,7 +10,9 @@ from api.restaurant.serializers import RestaurantSerializer
 
 @extend_schema_view(
     list=extend_schema(tags=["restaurant"]),
+    create=extend_schema(tags=["restaurant"]),
     generate_qr_code=extend_schema(tags=["restaurant"])
+
                     )
 class RestaurantViewSet(
     mixins.ListModelMixin,
