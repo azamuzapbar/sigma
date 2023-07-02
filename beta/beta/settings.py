@@ -101,6 +101,7 @@ INSTALLED_APPS = [
     'api',
     'phonenumbers',
     'drf_spectacular',
+    'qrcode',
 ]
 
 MIDDLEWARE = [
