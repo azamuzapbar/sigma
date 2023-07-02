@@ -1,6 +1,8 @@
 from django.core.validators import MinValueValidator
 from django.db import models
+
 from .menu import Menu
+
 
 class FoodItem(models.Model):
     menu = models.ForeignKey(Menu, on_delete=models.CASCADE, verbose_name='Меню')
